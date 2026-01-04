@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 transition-colors duration-300">
     
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <header class="sticky top-0 z-50 bg-white shadow-sm transition-colors duration-300">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
@@ -27,15 +27,7 @@
                     <div class="relative group">
                         <a href="#about" class="nav-link text-gray-700 hover:text-green-500 transition-colors flex items-center cursor-pointer">
                             About Me
-                            <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
                         </a>
-                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto">
-                            <div class="py-2">
-                                <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Overview</a>
-                                <a href="#about-skills" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Skills</a>
-                                <a href="#about-education" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Education</a>
-                            </div>
-                        </div>
                     </div>
                     
                     <a href="#resume" class="nav-link text-gray-700 hover:text-green-500 transition-colors">Resume</a>
@@ -44,14 +36,8 @@
                     <div class="relative group">
                         <a href="#portfolio" class="nav-link text-gray-700 hover:text-green-500 transition-colors flex items-center cursor-pointer">
                             Portfolio
-                            <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
                         </a>
-                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto">
-                            <div class="py-2">
-                                <a href="#portfolio" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">All Projects</a>
-                                <a href="#portfolio-web" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Web Development</a>
-                                <a href="#portfolio-apps" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Applications</a>
-                            </div>
+                            <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto">
                         </div>
                     </div>
                     
@@ -59,27 +45,21 @@
                     <div class="relative group">
                         <a href="#blog" class="nav-link text-gray-700 hover:text-green-500 transition-colors flex items-center cursor-pointer">
                             Blog
-                            <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
                         </a>
                         <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto">
-                            <div class="py-2">
-                                <a href="#blog" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Latest Posts</a>
-                                <a href="#blog-tech" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Tech Insights</a>
-                                <a href="#blog-tutorials" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-500 transition-colors">Tutorials</a>
-                            </div>
                         </div>
                     </div>
                     
                     <a href="#contact" class="nav-link text-gray-700 hover:text-green-500 transition-colors">Contact</a>
-                    <a href="#get-it" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">
-                        Get it Now
-                    </a>
+
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden text-gray-700" id="mobile-menu-btn">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+                <div class="flex items-center space-x-4 md:hidden">
+                    <!-- Mobile Menu Button -->
+                    <button class="text-gray-700" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
 
             <!-- Mobile Navigation -->
@@ -90,14 +70,6 @@
                             <a href="#about" class="nav-link text-gray-700 hover:text-green-500 transition-colors flex-1">
                                 About Me
                             </a>
-                            <button type="button" class="mobile-dropdown-toggle text-gray-700 px-2">
-                                <i class="fas fa-chevron-down text-xs mobile-dropdown-icon transition-transform duration-300"></i>
-                            </button>
-                        </div>
-                        <div class="hidden mt-2 ml-4 space-y-2 mobile-dropdown-content">
-                            <a href="#about" class="block text-gray-600 hover:text-green-500 transition-colors">Overview</a>
-                            <a href="#about-skills" class="block text-gray-600 hover:text-green-500 transition-colors">Skills</a>
-                            <a href="#about-education" class="block text-gray-600 hover:text-green-500 transition-colors">Education</a>
                         </div>
                     </div>
                     <a href="#resume" class="nav-link text-gray-700 hover:text-green-500 transition-colors">Resume</a>
@@ -107,13 +79,7 @@
                                 Portfolio
                             </a>
                             <button type="button" class="mobile-dropdown-toggle text-gray-700 px-2">
-                                <i class="fas fa-chevron-down text-xs mobile-dropdown-icon transition-transform duration-300"></i>
                             </button>
-                        </div>
-                        <div class="hidden mt-2 ml-4 space-y-2 mobile-dropdown-content">
-                            <a href="#portfolio" class="block text-gray-600 hover:text-green-500 transition-colors">All Projects</a>
-                            <a href="#portfolio-web" class="block text-gray-600 hover:text-green-500 transition-colors">Web Development</a>
-                            <a href="#portfolio-apps" class="block text-gray-600 hover:text-green-500 transition-colors">Applications</a>
                         </div>
                     </div>
                     <div class="mobile-dropdown">
@@ -121,25 +87,16 @@
                             <a href="#blog" class="nav-link text-gray-700 hover:text-green-500 transition-colors flex-1">
                                 Blog
                             </a>
-                            <button type="button" class="mobile-dropdown-toggle text-gray-700 px-2">
-                                <i class="fas fa-chevron-down text-xs mobile-dropdown-icon transition-transform duration-300"></i>
-                            </button>
-                        </div>
-                        <div class="hidden mt-2 ml-4 space-y-2 mobile-dropdown-content">
-                            <a href="#blog" class="block text-gray-600 hover:text-green-500 transition-colors">Latest Posts</a>
-                            <a href="#blog-tech" class="block text-gray-600 hover:text-green-500 transition-colors">Tech Insights</a>
-                            <a href="#blog-tutorials" class="block text-gray-600 hover:text-green-500 transition-colors">Tutorials</a>
-                        </div>
+                        </div>                      
                     </div>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-green-500 transition-colors">Contact</a>
-                    <a href="#get-it" class="bg-green-500 text-white px-4 py-2 rounded text-center">Get it Now</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-green-500 transition-colors">Contact</a> 
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
+    <section id="home" class="bg-gradient-to-br from-gray-50 to-whitefrom-gray-900to-gray-800 py-16 md:py-24">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <!-- Profile Picture -->
@@ -156,41 +113,18 @@
                     <span class="inline-block text-gray-500 text-sm uppercase tracking-wide font-semibold mb-2 px-3 py-1 bg-green-100 rounded-full">Frontend Developer</span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 mb-6">
                         Josh Simpas
-                    </h1>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6 max-w-2xl">
-                        Information Technology student passionate about creating innovative web solutions. I specialize in frontend development, building responsive and user-friendly applications with modern technologies.
-                    </p>
+                    </h1>        
                     <p class="text-gray-600 text-base leading-relaxed mb-8 max-w-2xl">
                         My portfolio showcases academic projects, technical skills, and hands-on experiences in software development, system management, and emerging technologies. I'm dedicated to demonstrating problem-solving abilities, creativity in coding, and adaptability in modern IT environments.
                     </p>
                     
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-4 mb-8 max-w-md">
-                        <div class="text-center md:text-left">
-                            <div class="text-2xl md:text-3xl font-bold text-green-500">10+</div>
-                            <div class="text-sm text-gray-600">Projects</div>
-                        </div>
-                        <div class="text-center md:text-left">
-                            <div class="text-2xl md:text-3xl font-bold text-green-500">5+</div>
-                            <div class="text-sm text-gray-600">Technologies</div>
-                        </div>
-                        <div class="text-center md:text-left">
-                            <div class="text-2xl md:text-3xl font-bold text-green-500">100%</div>
-                            <div class="text-sm text-gray-600">Dedicated</div>
-                        </div>
-                    </div>
-
+                   
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
                         <a href="#resume" class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-all duration-300 text-center font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                             <i class="fas fa-download mr-2"></i>Download CV
                         </a>
-                        <a href="#contact" class="border-2 border-gray-400 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-100 hover:border-gray-500 transition-all duration-300 text-center font-semibold">
-                            <i class="fas fa-envelope mr-2"></i>Contact Me
-                        </a>
-                    </div>
-
-                    <!-- Social Links -->
+                                            <!-- Social Links -->
                     <div class="flex gap-4 justify-center md:justify-start">
                         <a href="https://linkedin.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-all duration-300 transform hover:scale-110">
                             <i class="fab fa-linkedin-in text-xl"></i>
@@ -201,6 +135,7 @@
                         <a href="https://twitter.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-all duration-300 transform hover:scale-110">
                             <i class="fab fa-twitter text-xl"></i>
                         </a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -219,7 +154,7 @@
 
             <div class="grid lg:grid-cols-2 gap-12 items-start">
                 <!-- About Me Content -->
-                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100border-gray-700">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                         <i class="fas fa-user-circle text-green-500 mr-3 text-3xl"></i>
                         About Me
@@ -250,7 +185,7 @@
                 </div>
 
                 <!-- Skills & Expertise -->
-                <div id="about-skills" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <div id="about-skills" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100border-gray-700">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                         <i class="fas fa-tools text-green-500 mr-3 text-3xl"></i>
                         Skills & Expertise
@@ -293,115 +228,14 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
     </section>
 
-    <!-- About Education Section -->
-    <section id="about-education" class="bg-gray-50 py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
-                Education
-                <div class="w-20 h-1 bg-green-500 mt-2"></div>
-            </h2>
-            <div class="mt-12 max-w-3xl">
-                <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-green-500">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Information Technology</h3>
-                    <p class="text-green-500 font-medium mb-4">Current Student</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Pursuing a degree in Information Technology with a focus on software development, 
-                        system management, and emerging technologies. Actively engaged in academic projects 
-                        and hands-on learning experiences.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- What I Do Section -->
-    <section class="bg-white py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
-                What I Do
-                <div class="w-20 h-1 bg-green-500 mt-2"></div>
-            </h2>
 
-            <p class="text-gray-600 mt-4 mb-12 max-w-2xl">
-                I offer comprehensive services in web development, system management, and modern technology solutions. Each service is tailored to meet your specific needs and deliver exceptional results.
-            </p>
 
-            <div class="grid md:grid-cols-2 gap-8 mt-12">
-                <!-- Service 1: Frontend Development -->
-                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-code text-green-500 text-2xl"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Frontend Development</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Creating responsive and interactive user interfaces using modern frameworks like React and Vue.js. I build fast, accessible, and user-friendly web applications that provide exceptional user experiences across all devices.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 2: Web Design -->
-                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-desktop text-green-500 text-2xl"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Web Design</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Designing modern, clean, and intuitive web interfaces with a focus on user experience and visual appeal. I combine creativity with functionality to create websites that are both beautiful and highly functional.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 3: Full-Stack Development -->
-                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-server text-green-500 text-2xl"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Full-Stack Development</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Building complete web applications from frontend to backend. I develop RESTful APIs, manage databases, and create seamless integrations between client and server components using Node.js and modern frameworks.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 4: System Management -->
-                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-cogs text-green-500 text-2xl"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">System Management</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Managing and maintaining IT infrastructure, including server administration, network configuration, and cloud services. I ensure systems run efficiently and securely while implementing best practices for monitoring and optimization.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Resume Section -->
     <section id="resume" class="bg-gray-50 py-20">
@@ -410,123 +244,138 @@
                 Resume
                 <div class="w-20 h-1 bg-green-500 mt-2"></div>
             </h2>
-            <div class="mt-12 max-w-4xl space-y-6">
-                <!-- Professional Summary -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Professional Summary</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Dedicated Information Technology student with a strong passion for creating innovative software solutions. 
-                        Experienced in frontend development, system management, and modern web technologies. Skilled in building 
-                        responsive web applications, managing IT systems, and implementing best practices in software development.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Proficient in JavaScript, React, Node.js, and various web frameworks. Strong problem-solving abilities 
-                        and a commitment to writing clean, maintainable code. Always eager to learn new technologies and 
-                        contribute to meaningful projects.
-                    </p>
-                    <a href="#" class="inline-block bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition-colors">
-                        <i class="fas fa-download mr-2"></i>Download CV
-                    </a>
-                </div>
+            <div class="mt-12 max-w-6xl">
+                <!-- Professional Summary and Education Side by Side -->
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <!-- Professional Summary -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Professional Summary</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Dedicated Information Technology student with a strong passion for creating innovative software solutions. 
+                            Experienced in frontend development, system management, and modern web technologies. Skilled in building 
+                            responsive web applications, managing IT systems, and implementing best practices in software development.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Proficient in JavaScript, React, Node.js, and various web frameworks. Strong problem-solving abilities 
+                            and a commitment to writing clean, maintainable code. Always eager to learn new technologies and 
+                            contribute to meaningful projects.
+                        </p>
+                        <a href="#" class="inline-block bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition-colors">
+                            <i class="fas fa-download mr-2"></i>Download CV
+                        </a>
+                    </div>
 
-                <!-- Education -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Education</h3>
-                    <div class="space-y-6">
-                        <div class="border-l-4 border-green-500 pl-6">
-                            <h4 class="text-xl font-semibold text-gray-900">Bachelor of Science in Information Technology</h4>
-                            <p class="text-green-500 font-medium mb-2">University Name | 2021 - Present</p>
-                            <p class="text-gray-600 mb-3">Currently pursuing degree with focus on:</p>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>Software Development and Programming</li>
-                                <li>Web Technologies and Frontend Development</li>
-                                <li>System Administration and Network Management</li>
-                                <li>Database Management Systems</li>
-                                <li>Cloud Computing and DevOps</li>
-                            </ul>
-                            <p class="text-gray-500 mt-3"><strong>GPA:</strong> 3.7/4.0</p>
+                    <!-- Education -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Education</h3>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h4 class="text-xl font-semibold text-gray-900">Bachelor of Science in Information Technology</h4>
+                                <p class="text-green-500 font-medium mb-2">University Name | 2021 - Present</p>
+                                <p class="text-gray-600 mb-3">Currently pursuing degree with focus on:</p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>Software Development and Programming</li>
+                                    <li>Web Technologies and Frontend Development</li>
+                                    <li>System Administration and Network Management</li>
+                                    <li>Database Management Systems</li>
+                                    <li>Cloud Computing and DevOps</li>
+                                </ul>
+                                <p class="text-gray-500 mt-3"><strong>GPA:</strong> 3.7/4.0</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Technical Skills -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Technical Skills</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-3">Frontend Development</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>HTML5, CSS3, JavaScript (ES6+)</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>React.js, Vue.js</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Tailwind CSS, Bootstrap</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Responsive Web Design</li>
-                            </ul>
+                <!-- Technical Skills and Experience & Projects Side by Side -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Tech Stack (Left) -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <!-- Header -->
+                        <div class="flex items-center justify-between mb-8">
+                            <div class="flex items-center space-x-3">                                <h3 class="text-2xl font-bold text-gray-900">Tech Stack</h3>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-3">Backend & Tools</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Node.js, Express.js</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>RESTful API Development</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>MongoDB, MySQL</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Git, GitHub</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-3">System & Others</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Linux System Administration</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Network Configuration</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Cloud Services (AWS basics)</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Docker, CI/CD</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-3">Programming Languages</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>JavaScript, TypeScript</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Python</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>Java (Basics)</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i>SQL</li>
-                            </ul>
+
+                        <!-- Categories -->
+                        <div class="space-y-6">
+                            <!-- Frontend -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-4">Frontend</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">JavaScript</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">TypeScript</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">React</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Vue.js</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Tailwind CSS</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">HTML5</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">CSS3</span>
+                                </div>
+                            </div>
+
+                            <!-- Backend -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-4">Backend</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Node.js</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Python</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Express.js</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">MongoDB</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">MySQL</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">RESTful API</span>
+                                </div>
+                            </div>
+
+                            <!-- DevOps & Cloud -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-4">DevOps & Cloud</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">AWS</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Docker</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Linux</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">Git</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">GitHub</span>
+                                    <span class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 text-sm font-medium hover:border-green-500 hover:text-green-500 transition-colors">CI/CD</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Experience & Projects -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Experience & Projects</h3>
-                    <div class="space-y-6">
-                        <div class="border-l-4 border-green-500 pl-6">
-                            <h4 class="text-xl font-semibold text-gray-900">Academic Projects</h4>
-                            <p class="text-gray-500 mb-2">2023 - Present</p>
-                            <p class="text-gray-600 mb-3">Developed various web applications and system management projects:</p>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>E-commerce platform with payment integration and user authentication</li>
-                                <li>Task management application with real-time updates</li>
-                                <li>IT system monitoring dashboard with data visualization</li>
-                                <li>Responsive portfolio website with modern UI/UX</li>
-                            </ul>
-                        </div>
-                        <div class="border-l-4 border-green-500 pl-6">
-                            <h4 class="text-xl font-semibold text-gray-900">Personal Projects</h4>
-                            <p class="text-gray-500 mb-2">2022 - Present</p>
-                            <p class="text-gray-600 mb-3">Building portfolio projects to showcase technical skills:</p>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>React-based dashboard with API integration</li>
-                                <li>Full-stack web applications using MERN stack</li>
-                                <li>Open-source contributions to web development tools</li>
-                                <li>Personal blog platform with CMS functionality</li>
-                            </ul>
-                        </div>
-                        <div class="border-l-4 border-green-500 pl-6">
-                            <h4 class="text-xl font-semibold text-gray-900">Certifications & Achievements</h4>
-                            <p class="text-gray-500 mb-2">2022 - Present</p>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>Web Development Bootcamp Completion</li>
-                                <li>JavaScript Algorithms and Data Structures Certification</li>
-                                <li>Responsive Web Design Certification</li>
-                                <li>Dean's List - Multiple Semesters</li>
-                            </ul>
+                    
+                    <!-- Experience & Projects (Right) -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Experience & Projects</h3>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h4 class="text-xl font-semibold text-gray-900">Academic Projects</h4>
+                                <p class="text-gray-500 mb-2">2023 - Present</p>
+                                <p class="text-gray-600 mb-3">Developed various web applications and system management projects:</p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>E-commerce platform with payment integration and user authentication</li>
+                                    <li>Task management application with real-time updates</li>
+                                    <li>IT system monitoring dashboard with data visualization</li>
+                                    <li>Responsive portfolio website with modern UI/UX</li>
+                                </ul>
+                            </div>
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h4 class="text-xl font-semibold text-gray-900">Personal Projects</h4>
+                                <p class="text-gray-500 mb-2">2022 - Present</p>
+                                <p class="text-gray-600 mb-3">Building portfolio projects to showcase technical skills:</p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>React-based dashboard with API integration</li>
+                                    <li>Full-stack web applications using MERN stack</li>
+                                    <li>Open-source contributions to web development tools</li>
+                                    <li>Personal blog platform with CMS functionality</li>
+                                </ul>
+                            </div>
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h4 class="text-xl font-semibold text-gray-900">Certifications & Achievements</h4>
+                                <p class="text-gray-500 mb-2">2022 - Present</p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>Web Development Bootcamp Completion</li>
+                                    <li>JavaScript Algorithms and Data Structures Certification</li>
+                                    <li>Responsive Web Design Certification</li>
+                                    <li>Dean's List - Multiple Semesters</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -535,7 +384,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20">
+    <section id="portfolio" class="py-20bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
                 Portfolio
@@ -770,7 +619,7 @@
     </section>
 
     <!-- Blog Tech Section -->
-    <section id="blog-tech" class="py-20">
+    <section id="blog-tech" class="py-20bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
                 Tech Insights
@@ -830,189 +679,49 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
-                Testimonials
-                <div class="w-20 h-1 bg-green-500 mt-2"></div>
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-8 mt-12">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
-                            <img src="https://via.placeholder.com/100?text=Client" alt="Client" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-900">John Doe</h4>
-                            <p class="text-sm text-gray-500">CEO, Company Name</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excellent work and professionalism!"
-                    </p>
-                    <div class="flex text-yellow-400 mt-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
-                            <img src="https://via.placeholder.com/100?text=Client" alt="Client" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Jane Smith</h4>
-                            <p class="text-sm text-gray-500">Director, Tech Corp</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Outstanding results and attention to detail. Highly recommended for any project!"
-                    </p>
-                    <div class="flex text-yellow-400 mt-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
-                            <img src="https://via.placeholder.com/100?text=Client" alt="Client" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Mike Johnson</h4>
-                            <p class="text-sm text-gray-500">Founder, Startup Inc</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Professional, creative, and reliable. Exceeded all expectations!"
-                    </p>
-                    <div class="flex text-yellow-400 mt-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-50 py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
-                Contact Me
-                <div class="w-20 h-1 bg-green-500 mt-2"></div>
-            </h2>
-            <div class="mt-12 max-w-2xl">
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <p class="text-gray-600 mb-6">
-                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-                    </p>
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Your Name">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="your.email@example.com">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-colors font-semibold">
-                            Send Message
-                        </button>
-                    </form>
-                    <div class="mt-8 pt-8 border-t border-gray-200">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
-                        <div class="grid md:grid-cols-2 gap-6 mb-6">
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-envelope text-green-500 text-xl mt-1"></i>
-                                <div>
-                                    <p class="text-sm text-gray-500 mb-1">Email</p>
-                                    <a href="mailto:josh.simpas@example.com" class="text-gray-900 hover:text-green-500 transition-colors">josh.simpas@example.com</a>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-phone text-green-500 text-xl mt-1"></i>
-                                <div>
-                                    <p class="text-sm text-gray-500 mb-1">Phone</p>
-                                    <a href="tel:+15551234567" class="text-gray-900 hover:text-green-500 transition-colors">+1 (555) 123-4567</a>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-map-marker-alt text-green-500 text-xl mt-1"></i>
-                                <div>
-                                    <p class="text-sm text-gray-500 mb-1">Location</p>
-                                    <p class="text-gray-900">Available for Remote Work</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-clock text-green-500 text-xl mt-1"></i>
-                                <div>
-                                    <p class="text-sm text-gray-500 mb-1">Response Time</p>
-                                    <p class="text-gray-900">Usually within 24 hours</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-6 border-t border-gray-200">
-                            <p class="text-gray-600 mb-4">Connect with me on social media:</p>
-                            <div class="flex space-x-4">
-                                <a href="https://linkedin.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-colors">
-                                    <i class="fab fa-linkedin-in text-xl"></i>
-                                </a>
-                                <a href="https://github.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-colors">
-                                    <i class="fab fa-github text-xl"></i>
-                                </a>
-                                <a href="https://twitter.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-colors">
-                                    <i class="fab fa-twitter text-xl"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <section id="contact" class="bg-gray-50 py-24">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <!-- Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-blacktext-white">Contact</span>
+                    <span class="text-blacktext-white">Me</span>
+                </h2>
+            </div>
+
+            <!-- Form Layout -->    
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Left Column: Input Fields -->
+                <div class="space-y-6">
+                    <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-blackbg-gray-900 border-2 border-green-500 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Full Name">
+                    
+                    <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-blackbg-gray-900 border-2 border-green-500 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Email">
+                    
+                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-blackbg-gray-900 border-2 border-green-500 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Phone Number">
+                    
+                    <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-blackbg-gray-900 border-2 border-green-500 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Subject">
+                </div>
+
+                <!-- Right Column: Text Area and Button -->
+                <div class="flex flex-col">
+                    <textarea id="message" name="message" rows="8" class="w-full px-4 py-3 bg-blackbg-gray-900 border-2 border-green-500 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 resize-none mb-6" placeholder="Your Message"></textarea>
+                    
+                    <button type="submit" class="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 self-end shadow-[0_0_20px_rgba(34,197,94,0.6)] hover:shadow-[0_0_25px_rgba(34,197,94,0.8)]">
+                        Send Message
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Get It Now Section -->
-    <section id="get-it" class="bg-gradient-to-r from-green-500 to-green-600 py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Work Together?
-            </h2>
-            <p class="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-                Let's discuss your project and see how I can help bring your ideas to life.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-white text-green-500 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
-                    Get Started
-                </a>
-                <a href="#portfolio" class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-green-500 transition-colors font-semibold">
-                    View Portfolio
-                </a>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-gray-900bg-black text-white py-8">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 mb-4 md:mb-0">
