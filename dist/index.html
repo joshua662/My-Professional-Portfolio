@@ -139,93 +139,160 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="container mx-auto px-6 py-16 md:py-24">
-        <div class="flex flex-col md:flex-row items-center gap-12">
-            <!-- Profile Picture -->
-            <div class="flex-shrink-0">
-                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-white shadow-xl overflow-hidden bg-gray-200">
-                    <img src="image/Profile.jpg" 
-                         alt="Profile Picture" 
-                         class="w-full h-full object-cover">
+    <section id="home" class="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Profile Picture -->
+                <div class="flex-shrink-0">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-green-500 shadow-2xl overflow-hidden bg-gray-200 transform hover:scale-105 transition-transform duration-300">
+                        <img src="image/Profile.jpg" 
+                             alt="Profile Picture" 
+                             class="w-full h-full object-cover">
+                    </div>
                 </div>
-            </div>
 
-            <!-- Hero Content -->
-            <div class="flex-1 text-center md:text-left">
-                <span class="text-gray-500 text-sm uppercase tracking-wide">Frontend-developer</span>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 mb-6">
-                    Josh Simpas
-                </h1>
-                <p class="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl">
-                    Information Technology student, showcasing academic projects, technical skills, and hands-on experiences in software development, system management, and emerging technologies. 
-                    It serves as a professional space to demonstrate problem-solving abilities, creativity in coding, and adaptability in modern IT environments.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#resume" class="border-2 border-green-500 text-green-500 px-8 py-3 rounded hover:bg-green-500 hover:text-white transition-all duration-300 text-center font-semibold">
-                        Download CV
-                    </a>
-                    <a href="#contact" class="border-2 border-gray-400 text-gray-700 px-8 py-3 rounded hover:bg-gray-100 transition-all duration-300 text-center font-semibold">
-                        Contact
-                    </a>
+                <!-- Hero Content -->
+                <div class="flex-1 text-center md:text-left">
+                    <span class="inline-block text-gray-500 text-sm uppercase tracking-wide font-semibold mb-2 px-3 py-1 bg-green-100 rounded-full">Frontend Developer</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 mb-6">
+                        Josh Simpas
+                    </h1>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6 max-w-2xl">
+                        Information Technology student passionate about creating innovative web solutions. I specialize in frontend development, building responsive and user-friendly applications with modern technologies.
+                    </p>
+                    <p class="text-gray-600 text-base leading-relaxed mb-8 max-w-2xl">
+                        My portfolio showcases academic projects, technical skills, and hands-on experiences in software development, system management, and emerging technologies. I'm dedicated to demonstrating problem-solving abilities, creativity in coding, and adaptability in modern IT environments.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 mb-8 max-w-md">
+                        <div class="text-center md:text-left">
+                            <div class="text-2xl md:text-3xl font-bold text-green-500">10+</div>
+                            <div class="text-sm text-gray-600">Projects</div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <div class="text-2xl md:text-3xl font-bold text-green-500">5+</div>
+                            <div class="text-sm text-gray-600">Technologies</div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <div class="text-2xl md:text-3xl font-bold text-green-500">100%</div>
+                            <div class="text-sm text-gray-600">Dedicated</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
+                        <a href="#resume" class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-all duration-300 text-center font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <i class="fas fa-download mr-2"></i>Download CV
+                        </a>
+                        <a href="#contact" class="border-2 border-gray-400 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-100 hover:border-gray-500 transition-all duration-300 text-center font-semibold">
+                            <i class="fas fa-envelope mr-2"></i>Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="https://linkedin.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me & Skills Section -->
     <section id="about" class="bg-gray-50 py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
-                About Me
-                <div class="w-20 h-1 bg-green-500 mt-2"></div>
-            </h2>
-            <div class="mt-12 max-w-4xl">
-                <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                    I'm an Information Technology student passionate about software development, system management, and emerging technologies. 
-                    My journey in IT has been focused on building practical solutions and continuously learning new technologies.
-                </p>
-                <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                    I specialize in frontend development with a strong foundation in modern web technologies. 
-                    My academic projects and hands-on experiences have equipped me with problem-solving abilities and adaptability in modern IT environments.
-                </p>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 inline-block">
+                    About Me & Skills
+                    <div class="w-20 h-1 bg-green-500 mt-2 mx-auto"></div>
+                </h2>
             </div>
-        </div>
-    </section>
 
-    <!-- About Skills Section -->
-    <section id="about-skills" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center md:text-left">
-                Skills & Expertise
-                <div class="w-20 h-1 bg-green-500 mt-2"></div>
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8 mt-12">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Frontend Development</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>HTML5 & CSS3</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>JavaScript & TypeScript</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>React & Vue.js</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Tailwind CSS</li>
-                    </ul>
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- About Me Content -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-user-circle text-green-500 mr-3 text-3xl"></i>
+                        About Me
+                    </h3>
+                    <div class="space-y-4">
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            I'm an Information Technology student passionate about software development, system management, and emerging technologies. 
+                            My journey in IT has been focused on building practical solutions and continuously learning new technologies.
+                        </p>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            I specialize in frontend development with a strong foundation in modern web technologies. 
+                            My academic projects and hands-on experiences have equipped me with problem-solving abilities and adaptability in modern IT environments.
+                        </p>
+                        <div class="pt-4 border-t border-gray-200">
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                                    <i class="fas fa-graduation-cap mr-2"></i>IT Student
+                                </span>
+                                <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                                    <i class="fas fa-code mr-2"></i>Developer
+                                </span>
+                                <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+                                    <i class="fas fa-lightbulb mr-2"></i>Problem Solver
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Backend & Tools</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Node.js & Express</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Database Management</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Git & Version Control</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>API Development</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">System Management</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>System Administration</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Network Configuration</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cloud Services</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>DevOps Practices</li>
-                    </ul>
+
+                <!-- Skills & Expertise -->
+                <div id="about-skills" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-tools text-green-500 mr-3 text-3xl"></i>
+                        Skills & Expertise
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-br from-green-50 to-white p-5 rounded-lg border border-green-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-laptop-code text-green-500 mr-2"></i>
+                                Frontend
+                            </h4>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li><i class="fas fa-check-circle text-green-500 mr-2"></i>HTML5 & CSS3</li>
+                                <li><i class="fas fa-check-circle text-green-500 mr-2"></i>JavaScript & TypeScript</li>
+                                <li><i class="fas fa-check-circle text-green-500 mr-2"></i>React & Vue.js</li>
+                                <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-server text-blue-500 mr-2"></i>
+                                Backend & Tools
+                            </h4>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Node.js & Express</li>
+                                <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Database Management</li>
+                                <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Git & Version Control</li>
+                                <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>API Development</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-white p-5 rounded-lg border border-purple-100 hover:shadow-md transition-shadow md:col-span-2">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-cogs text-purple-500 mr-2"></i>
+                                System Management
+                            </h4>
+                            <ul class="space-y-2 text-gray-600 text-sm grid md:grid-cols-2 gap-2">
+                                <li><i class="fas fa-check-circle text-purple-500 mr-2"></i>System Administration</li>
+                                <li><i class="fas fa-check-circle text-purple-500 mr-2"></i>Network Configuration</li>
+                                <li><i class="fas fa-check-circle text-purple-500 mr-2"></i>Cloud Services</li>
+                                <li><i class="fas fa-check-circle text-purple-500 mr-2"></i>DevOps Practices</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -260,70 +327,74 @@
                 <div class="w-20 h-1 bg-green-500 mt-2"></div>
             </h2>
 
+            <p class="text-gray-600 mt-4 mb-12 max-w-2xl">
+                I offer comprehensive services in web development, system management, and modern technology solutions. Each service is tailored to meet your specific needs and deliver exceptional results.
+            </p>
+
             <div class="grid md:grid-cols-2 gap-8 mt-12">
-                <!-- Service 1: Copywrite -->
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <!-- Service 1: Frontend Development -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 border-2 border-green-400 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-pencil-alt text-green-500 text-2xl"></i>
+                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-code text-green-500 text-2xl"></i>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Copywrite</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Frontend Development</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                Creating responsive and interactive user interfaces using modern frameworks like React and Vue.js. I build fast, accessible, and user-friendly web applications that provide exceptional user experiences across all devices.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 2: Web Design -->
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 border-2 border-green-400 rounded-lg flex items-center justify-center">
+                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
                                 <i class="fas fa-desktop text-green-500 text-2xl"></i>
                             </div>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900 mb-3">Web Design</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                Designing modern, clean, and intuitive web interfaces with a focus on user experience and visual appeal. I combine creativity with functionality to create websites that are both beautiful and highly functional.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 3: Ecommerce -->
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <!-- Service 3: Full-Stack Development -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 border-2 border-green-400 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-store text-green-500 text-2xl"></i>
+                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-server text-green-500 text-2xl"></i>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Ecommerce</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Full-Stack Development</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                Building complete web applications from frontend to backend. I develop RESTful APIs, manage databases, and create seamless integrations between client and server components using Node.js and modern frameworks.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 4: Marketing -->
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <!-- Service 4: System Management -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition-all duration-300">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 border-2 border-green-400 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-bullhorn text-green-500 text-2xl"></i>
+                            <div class="w-16 h-16 bg-green-100 border-2 border-green-400 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-cogs text-green-500 text-2xl"></i>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Marketing</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">System Management</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                Managing and maintaining IT infrastructure, including server administration, network configuration, and cloud services. I ensure systems run efficiently and securely while implementing best practices for monitoring and optimization.
                             </p>
                         </div>
                     </div>
@@ -912,9 +983,6 @@
                                 <a href="https://twitter.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-colors">
                                     <i class="fab fa-twitter text-xl"></i>
                                 </a>
-                                <a href="https://instagram.com" target="_blank" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-colors">
-                                    <i class="fab fa-instagram text-xl"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -948,7 +1016,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 mb-4 md:mb-0">
-                    &copy; 2024 Alex Smith. All rights reserved.
+                    &copy; 2024 Josh Simpas. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">
