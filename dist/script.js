@@ -89,3 +89,73 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// ===== Certification Modals =====
+
+/**
+ * Opens a certification modal by ID.
+ * @param {string} certId - The certification identifier (e.g., 'cert-1').
+ */
+function openModal(certId) {
+    const modal = document.getElementById(`${certId}-modal`);
+    if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex'); // Add flex for centering
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+/**
+ * Closes a certification modal by ID.
+ * @param {string} certId - The certification identifier (e.g., 'cert-1').
+ */
+function closeModal(certId) {
+    const modal = document.getElementById(`${certId}-modal`);
+    if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex'); // Remove flex
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+}
+
+// Initialize modals when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Attach click handlers to certification image cards
+    document.querySelectorAll('[data-cert-modal]').forEach(card => {
+        card.addEventListener('click', function(e) {
+            const certId = this.getAttribute('data-cert-modal');
+            if (certId) {
+                e.preventDefault();
+                e.stopPropagation();
+                openModal(certId);
+            }
+        });
+    });
+
+    // Close modal when clicking on the overlay (dark background)
+    document.querySelectorAll('[id$="-modal"]').forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            // Close if clicking directly on the overlay, not the modal content
+            if (e.target === modal) {
+                const id = modal.id.replace('-modal', '');
+                closeModal(id);
+            }
+        });
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('[id$="-modal"]').forEach(modal => {
+                if (!modal.classList.contains('hidden')) {
+                    const id = modal.id.replace('-modal', '');
+                    closeModal(id);
+                }
+            });
+        }
+    });
+});
+
+// Make functions globally available for onclick handlers
+window.openModal = openModal;
+window.closeModal = closeModal;
+
