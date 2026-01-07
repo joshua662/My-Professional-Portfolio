@@ -140,8 +140,9 @@
                 </h2>
             </div>
 
-            <div class="grid gap-12 items-start lg:grid-cols-2">
-                <!-- About Me Content -->
+            <!-- About Me and My Experience Layout -->
+            <div class="grid gap-8 lg:grid-cols-2 mb-8">
+                <!-- About Me - Left Side -->
                 <div class="p-8 bg-white rounded-xl border shadow-lg border-gray-100border-gray-700">
                     <h3 class="flex items-center mb-6 text-2xl font-bold text-gray-900">
                         <i class="mr-3 text-3xl text-green-500 fas fa-user-circle"></i>
@@ -169,126 +170,85 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="mt-6">
-                            <button onclick="openModal('experience')" class="px-6 py-2 font-semibold text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600">
-                                View All
-                            </button>
-                            <div id="experience-modal" class="hidden fixed inset-0 z-50 justify-center items-center backdrop-blur-sm bg-black/50">
-                                <div class="w-[400px] bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all scale-100">
-                                    <div class="flex justify-center items-center py-6 bg-green-500">
-                                        <i class="text-4xl text-white fas fa-briefcase"></i>
-                                    </div>
-                                    <div class="px-6 py-6">
-                                        <h3 class="mb-6 text-2xl font-bold text-center text-gray-900">Experience</h3>
-                                        <div class="overflow-y-auto relative pl-2 mb-6 h-64 custom-scrollbar">
-                                            <div class="absolute top-0 bottom-0 left-2 w-px bg-gray-200"></div>
-                                            <div class="pl-6 space-y-6 text-left">
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-green-500 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">Principal AI Engineer</p>
-                                                    <p class="text-sm text-gray-500">Standard Chartered</p>
-                                                    <p class="mt-1 text-xs font-semibold text-green-600">2025</p>
-                                                </div>
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">AI Ops Engineer</p>
-                                                    <p class="text-sm text-gray-500">Centre of Excellence for GenAI, Cambridge</p>
-                                                    <p class="mt-1 text-xs font-semibold text-gray-400">2025</p>
-                                                </div>
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">Senior Full-Stack Developer</p>
-                                                    <p class="text-sm text-gray-500">Core Technology, Cambridge</p>
-                                                    <p class="mt-1 text-xs font-semibold text-gray-400">2024</p>
-                                                </div>
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">Software Engineering Lead</p>
-                                                    <p class="text-sm text-gray-500">PocketDevs</p>
-                                                    <p class="mt-1 text-xs font-semibold text-gray-400">2022</p>
-                                                </div>
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">Lead Application Developer</p>
-                                                    <p class="text-sm text-gray-500">Bluewind Asia</p>
-                                                    <p class="mt-1 text-xs font-semibold text-gray-400">2021</p>
-                                                </div>
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">Software Engineer</p>
-                                                    <p class="text-sm text-gray-500">GCM</p>
-                                                    <p class="mt-1 text-xs font-semibold text-gray-400">2020</p>
-                                                </div>
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">BS Information Technology</p>
-                                                    <p class="text-sm text-gray-500">University of San Carlos</p>
-                                                    <p class="mt-1 text-xs font-semibold text-gray-400">2019</p>
-                                                </div>
-                                                <div class="relative">
-                                                    <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
-                                                    <p class="font-bold text-gray-900">Hello World! 👋</p>
-                                                    <p class="text-sm text-gray-500">Wrote my first line of code</p>
-                                                    <p class="mt-1 text-xs font-semibold text-gray-400">2015</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <button onclick="closeModal('experience')" class="px-8 py-2.5 font-bold text-white bg-green-500 rounded-full shadow-md transition-colors hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-                                                CLOSE
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
-                <!-- Social Links -->
-                <div id="about-skills" class="p-8 bg-white rounded-xl border border-gray-100 border-gray-700 shadow-lg">
+                <!-- My Experience - Right Side -->
+                <div class="p-8 bg-white rounded-xl border shadow-lg border-gray-100border-gray-700">
                     <h3 class="flex items-center mb-6 text-2xl font-bold text-gray-900">
-                        <i class="mr-3 text-3xl text-green-500 fas fa-link"></i>
-                        Social Links
+                        <i class="mr-3 text-3xl text-green-500 fas fa-briefcase"></i>
+                        My Experience
                     </h3>
-                    <div class="space-y-4">
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex gap-4 items-center p-4 bg-gray-50 rounded-lg border border-gray-200 transition-all duration-200 hover:border-green-500 hover:shadow-md">
-                            <div class="flex justify-center items-center w-12 h-12 text-white bg-gray-900 rounded-lg">
-                                <i class="text-2xl fab fa-linkedin-in"></i>
+                    <div class="relative">
+                        <div class="absolute top-0 bottom-0 left-2 w-px bg-gray-200"></div>
+                        <div class="pl-6 space-y-6">
+                            <div class="relative">
+                                <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
+                                <p class="font-bold text-gray-900">Lead Application Developer</p>
+                                <p class="text-sm text-gray-500">Bluewind Asia</p>
+                                <p class="mt-1 text-xs font-semibold text-gray-400">2021</p>
                             </div>
-                            <div class="flex-1">
-                                <p class="font-semibold text-gray-900">LinkedIn</p>
-                                <p class="text-sm text-gray-500">Connect with me professionally</p>
+                            <div class="relative">
+                                <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
+                                <p class="font-bold text-gray-900">Software Engineer</p>
+                                <p class="text-sm text-gray-500">GCM</p>
+                                <p class="mt-1 text-xs font-semibold text-gray-400">2020</p>
                             </div>
-                            <i class="text-gray-400 fas fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <a href="https://github.com" target="_blank" rel="noopener" class="flex gap-4 items-center p-4 bg-gray-50 rounded-lg border border-gray-200 transition-all duration-200 hover:border-green-500 hover:shadow-md">
-                            <div class="flex justify-center items-center w-12 h-12 text-white bg-gray-900 rounded-lg">
-                                <i class="text-2xl fab fa-github"></i>
+                            <div class="relative">
+                                <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
+                                <p class="font-bold text-gray-900">BS Information Technology</p>
+                                <p class="text-sm text-gray-500">University of San Carlos</p>
+                                <p class="mt-1 text-xs font-semibold text-gray-400">2019</p>
                             </div>
-                            <div class="flex-1">
-                                <p class="font-semibold text-gray-900">GitHub</p>
-                                <p class="text-sm text-gray-500">Explore my repositories</p>
+                            <div class="relative">
+                                <span class="absolute top-1.5 -left-6 w-3 h-3 bg-gray-300 rounded-full ring-4 ring-white"></span>
+                                <p class="font-bold text-gray-900">Hello World! 👋</p>
+                                <p class="text-sm text-gray-500">Wrote my first line of code</p>
+                                <p class="mt-1 text-xs font-semibold text-gray-400">2015</p>
                             </div>
-                            <i class="text-gray-400 fas fa-arrow-up-right-from-square"></i>
-                        </a>
+                        </div>
                     </div>
-                    
-                    <!-- Email Contact -->
-                    <div class="pt-6 mt-6 border-t border-gray-200">
-                        <a href="mailto:joshiasimpas36@gmail.com" class="flex gap-4 items-center p-4 bg-white rounded-lg border border-gray-200 transition-all duration-200 hover:border-green-500 hover:shadow-md">
-                            <div class="flex justify-center items-center w-12 h-12 text-white bg-gray-900 rounded-lg">
-                                <i class="text-2xl fas fa-envelope"></i>
-                            </div>
-                            <div class="flex-1">
-                                <p class="font-semibold text-gray-900">Email</p>
-                                <p class="text-gray-600">joshiasimpas36@gmail.com</p>
-                            </div>
-                              <i class="text-gray-400 fas fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>  
+                </div>
+            </div>
+
+            <!-- Social Links - Bottom -->
+            <div id="about-skills" class="p-8 bg-white rounded-xl border border-gray-100 border-gray-700 shadow-lg">
+                <h3 class="flex items-center mb-6 text-2xl font-bold text-gray-900">
+                    <i class="mr-3 text-3xl text-green-500 fas fa-link"></i>
+                    Social Links
+                </h3>
+                <div class="grid gap-4 md:grid-cols-3">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex gap-4 items-center p-4 bg-gray-50 rounded-lg border border-gray-200 transition-all duration-200 hover:border-green-500 hover:shadow-md">
+                        <div class="flex justify-center items-center w-12 h-12 text-white bg-gray-900 rounded-lg">
+                            <i class="text-2xl fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-900">LinkedIn</p>
+                            <p class="text-sm text-gray-500">Connect with me professionally</p>
+                        </div>
+                        <i class="text-gray-400 fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener" class="flex gap-4 items-center p-4 bg-gray-50 rounded-lg border border-gray-200 transition-all duration-200 hover:border-green-500 hover:shadow-md">
+                        <div class="flex justify-center items-center w-12 h-12 text-white bg-gray-900 rounded-lg">
+                            <i class="text-2xl fab fa-github"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-900">GitHub</p>
+                            <p class="text-sm text-gray-500">Explore my repositories</p>
+                        </div>
+                        <i class="text-gray-400 fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="mailto:joshiasimpas36@gmail.com" class="flex gap-4 items-center p-4 bg-gray-50 rounded-lg border border-gray-200 transition-all duration-200 hover:border-green-500 hover:shadow-md">
+                        <div class="flex justify-center items-center w-12 h-12 text-white bg-gray-900 rounded-lg">
+                            <i class="text-2xl fas fa-envelope"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-900">Email</p>
+                            <p class="text-sm text-gray-600">joshiasimpas36@gmail.com</p>
+                        </div>
+                        <i class="text-gray-400 fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -367,181 +327,90 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20bg-gray-900">
-        <div class="container px-6 mx-auto">
-            <h2 class="mb-2 text-3xl font-bold text-center text-gray-900 md:text-4xl md:text-left">
-                Projects
-                <div class="mt-2 w-20 h-1 bg-green-500"></div>
-            </h2>
-            <p class="mt-4 mb-12 max-w-2xl text-gray-600">
-                A collection of my projects showcasing technical skills, creativity, and problem-solving abilities.
-            </p>
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-                    <div class="flex justify-center items-center h-48 bg-gradient-to-br from-green-400 to-green-600">
-                        <i class="text-6xl text-white opacity-50 fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-semibold text-gray-900">Classroom Management System</h3>
-                        <p class="mb-4 text-gray-600">Classroom management is the practice of creating a structured, respectful, and engaging learning environment 
-                            by setting clear expectations, building routines, and minimizing disruptions so students can focus on learning.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">Python</span>
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">Django</span>
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">Tailwind CSS</span>
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">MySQL</span>
+<section id="portfolio" class="py-20 bg-white">
+  <div class="container px-6 mx-auto">
+    <!-- Section Title -->
+    <h2 class="mb-2 text-3xl font-bold text-center text-gray-900 md:text-4xl md:text-left">
+      Projects
+      <div class="mt-2 w-20 h-1 bg-green-500"></div>
+    </h2>
+    <p class="mt-4 mb-12 max-w-2xl text-gray-600">
+      A collection of my projects showcasing technical skills, creativity, and problem-solving abilities.
+    </p>
 
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-                    <div class="flex justify-center items-center h-48 bg-gradient-to-br from-blue-400 to-blue-600">
-                        <i class="text-6xl text-white opacity-50 fas fa-tasks"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-semibold text-gray-900">Gate Management System</h3>
-                        <p class="mb-4 text-gray-600">A Gate Management System (GMS) is a technology-driven solution designed to control, monitor, 
-                            and automate access to gates in residential areas, schools, offices, or industrial facilities. It ensures security, efficiency, 
-                            and convenience by regulating who enters or exits through a gate.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">node.js</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Laravel</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Tailwind CSS</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">PHP</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Python</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">MySQL</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-                    <div class="flex justify-center items-center h-48 bg-gradient-to-br from-purple-400 to-purple-600">
-                        <i class="text-6xl text-white opacity-50 fas fa-chart-line"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-semibold text-gray-900">System Monitoring Dashboard</h3>
-                        <p class="mb-4 text-gray-600">IT system monitoring and management application with real-time metrics, alerting system, and comprehensive reporting. Helps track server performance and system health.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">React</span>
-                            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Python</span>
-                            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Flask</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Grid with 3 Projects -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-    <!-- Portfolio Web Section -->
-    <section id="portfolio-web" class="py-20 bg-gray-50">
-        <div class="container px-6 mx-auto">
-            <h2 class="mb-2 text-3xl font-bold text-center text-gray-900 md:text-4xl md:text-left">
-                Web Development Projects
-                <div class="mt-2 w-20 h-1 bg-green-500"></div>
-            </h2>
-            <div class="grid gap-8 mt-12 md:grid-cols-2">
-                <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-                    <div class="flex justify-center items-center h-48 bg-gradient-to-br from-green-400 to-green-600">
-                        <i class="text-6xl text-white opacity-50 fas fa-laptop-code"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-semibold text-gray-900">Responsive Portfolio Website</h3>
-                        <p class="mb-4 text-gray-600">Modern, fully responsive portfolio website built with vanilla HTML, CSS, and JavaScript. Features smooth scrolling navigation, animated sections, and mobile-first design approach. Optimized for all screen sizes.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">HTML5</span>
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">CSS3</span>
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded-full">Tailwind CSS</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-                    <div class="flex justify-center items-center h-48 bg-gradient-to-br from-blue-400 to-blue-600">
-                        <i class="text-6xl text-white opacity-50 fas fa-chart-bar"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-semibold text-gray-900">React Analytics Dashboard</h3>
-                        <p class="mb-4 text-gray-600">Interactive analytics dashboard application with real-time data visualization, customizable charts, and user-friendly interface. Integrates with REST APIs for live data updates.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">React</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Tailwind CSS</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Chart.js</span>
-                            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">REST API</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Project 1: Classroom Management System -->
+      <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
+        <div class="relative group w-full h-64 overflow-hidden rounded-lg shadow-lg">
+          <img src="image/Project.png" alt="Project Screenshot"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute inset-0 bg-white bg-opacity-60 flex flex-col justify-center items-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h4 class="text-lg font-semibold mb-2">Classroom Management System</h4>
+            <p class="text-sm text-center px-4 mb-3">Built with Python, Django, Tailwind CSS, and MySQL</p>
+            <div class="flex flex-wrap justify-center gap-2">
+              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">Python</span>
+              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">Django</span>
+              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">Tailwind CSS</span>
+              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">MySQL</span>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Portfolio Apps Section -->
-    <section id="portfolio-apps" class="py-20">
-        <div class="container px-6 mx-auto">
-            <h2 class="mb-2 text-3xl font-bold text-center text-gray-900 md:text-4xl md:text-left">
-                Application Projects
-                <div class="mt-2 w-20 h-1 bg-green-500"></div>
-            </h2>
-            <div class="grid gap-8 mt-12 md:grid-cols-2">
-                <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-                    <div class="flex justify-center items-center h-48 bg-gradient-to-br from-purple-400 to-purple-600">
-                        <i class="text-6xl text-white opacity-50 fas fa-clipboard-list"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-semibold text-gray-900">Task Management App</h3>
-                        <p class="mb-4 text-gray-600">Full-featured task management application with user authentication, project organization, deadline tracking, and team collaboration. Features include drag-and-drop task organization, priority settings, and progress tracking.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Node.js</span>
-                            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">MongoDB</span>
-                            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Express</span>
-                            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">JWT Auth</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-                    <div class="flex justify-center items-center h-48 bg-gradient-to-br from-orange-400 to-orange-600">
-                        <i class="text-6xl text-white opacity-50 fas fa-desktop"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-semibold text-gray-900">System Monitoring Tool</h3>
-                        <p class="mb-4 text-gray-600">IT system monitoring and management application with real-time server metrics, alert notifications, and comprehensive reporting. Tracks CPU, memory, disk usage, and network performance.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-sm text-orange-700 bg-orange-100 rounded-full">Python</span>
-                            <span class="px-3 py-1 text-sm text-orange-700 bg-orange-100 rounded-full">Flask</span>
-                            <span class="px-3 py-1 text-sm text-orange-700 bg-orange-100 rounded-full">SQLite</span>
-                            <span class="px-3 py-1 text-sm text-orange-700 bg-orange-100 rounded-full">WebSocket</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Project 2: Gate Management System -->
+      <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
+        <div class="flex justify-center items-center h-48 bg-gradient-to-br from-blue-400 to-blue-600">
+          <i class="text-6xl text-white opacity-50 fas fa-tasks"></i>
         </div>
-    </section>
+        <div class="p-6">
+          <h3 class="mb-2 text-xl font-semibold text-gray-900">Gate Management System</h3>
+          <p class="mb-4 text-gray-600">
+            A Gate Management System (GMS) is a technology-driven solution designed to control, monitor, 
+            and automate access to gates in residential areas, schools, offices, or industrial facilities.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Node.js</span>
+            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Laravel</span>
+            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Tailwind CSS</span>
+            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">PHP</span>
+            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Python</span>
+            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">MySQL</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: System Monitoring Dashboard -->
+      <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
+        <div class="flex justify-center items-center h-48 bg-gradient-to-br from-purple-400 to-purple-600">
+          <i class="text-6xl text-white opacity-50 fas fa-chart-line"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="mb-2 text-xl font-semibold text-gray-900">System Monitoring Dashboard</h3>
+          <p class="mb-4 text-gray-600">
+            IT system monitoring and management application with real-time metrics, alerting system, and comprehensive reporting.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">React</span>
+            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Python</span>
+            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Flask</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Blog Section -->
     <section id="blog" class="py-20 bg-gray-50">
@@ -576,7 +445,7 @@
                         <div class="flex flex-col md:flex-row">
                             <!-- Certificate Image -->
                             <div class="md:w-1/3 cursor-pointer min-h-[200px] md:min-h-0" data-cert-modal="cert-1">
-                                <img src="image/cert-programming-foundations.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
+                                <img src="image/Programming foundations.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
                             </div>
                             <!-- Certificate Details -->
                             <div class="flex flex-col justify-between p-6 md:w-2/3">
@@ -589,17 +458,16 @@
                                         <span class="px-3 py-1 text-sm text-gray-700 bg-gray-100 rounded">Programming Foundations</span>
                                     </div>
                                 </div>
-                                <div class="flex gap-3">
-                                    <button onclick="openModal('cert-1')" class="px-6 py-2 font-medium text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600">
-                                        View Certificate
-                                    </button>
-                                    <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
-                                       target="_blank" 
-                                       rel="noopener"
-                                       class="flex justify-center items-center w-10 h-10 text-gray-600 bg-gray-100 rounded-full transition-colors hover:bg-gray-200">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
+                                <div class="flex justify-center">
+                                <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
+                                    target="_blank" 
+                                    rel="noopener"
+                                    class="flex justify-center items-center gap-2 text-gray-600 bg-gray-100 rounded-full px-4 py-2 transition-colors hover:bg-green-500">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>View Details</span>
+                                </a>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -610,12 +478,12 @@
                             <div class="flex flex-col md:flex-row">
                                 <!-- Certificate Image -->
                                 <div class="md:w-1/3 cursor-pointer min-h-[200px] md:min-h-0" data-cert-modal="cert-1">
-                                    <img src="image/cert-programming-foundations.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
+                                    <img src="image/Incident Respone Leadership for Cybersecurity Managers.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
                                 </div>
                                 <!-- Certificate Details -->
                                 <div class="flex flex-col justify-between p-6 md:w-2/3">
                                     <div>
-                                        <h3 class="mb-2 text-xl font-bold text-gray-900">Programming Foundations: Fundamentals</h3>
+                                        <h3 class="mb-2 text-xl font-bold text-gray-900">Incident Response Leadership for Cybersecurity Manager: From Incident Planning to Business Continuity.</h3>
                                         <p class="mb-3 text-sm text-gray-500">LinkedIn Learning • Dec 18, 2025</p>
                                         <p class="mb-4 text-gray-600">This comprehensive course covers the fundamental concepts of programming, including variables, data types, control structures, functions, and basic algorithms.</p>
                                         <div class="flex flex-wrap gap-2 mb-4">
@@ -623,15 +491,13 @@
                                             <span class="px-3 py-1 text-sm text-gray-700 bg-gray-100 rounded">Programming Foundations</span>
                                         </div>
                                     </div>
-                                    <div class="flex gap-3">
-                                        <button onclick="openModal('cert-1')" class="px-6 py-2 font-medium text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600">
-                                            View Certificate
-                                        </button>
+                                    <div class="flex justify-center">
                                         <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
-                                           target="_blank" 
-                                           rel="noopener"
-                                           class="flex justify-center items-center w-10 h-10 text-gray-600 bg-gray-100 rounded-full transition-colors hover:bg-gray-200">
-                                            <i class="fab fa-linkedin"></i>
+                                        target="_blank" 
+                                        rel="noopener"
+                                        class="flex justify-center items-center gap-2 text-gray-600 bg-gray-100 rounded-full px-3 py-2 transition-colors hover:bg-green-500">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>View Details</span>
                                         </a>
                                     </div>
                                 </div>
@@ -645,12 +511,12 @@
                             <div class="flex flex-col md:flex-row">
                                 <!-- Certificate Image -->
                                 <div class="md:w-1/3 cursor-pointer min-h-[200px] md:min-h-0" data-cert-modal="cert-1">
-                                    <img src="image/cert-programming-foundations.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
+                                    <img src="image/Cybersecurity Audit and Assessment Fundamentals.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
                                 </div>
                                 <!-- Certificate Details -->
                                 <div class="flex flex-col justify-between p-6 md:w-2/3">
                                     <div>
-                                        <h3 class="mb-2 text-xl font-bold text-gray-900">Programming Foundations: Fundamentals</h3>
+                                        <h3 class="mb-2 text-xl font-bold text-gray-900">Cybersecurity Audit and Assessment Fundamentals for GRC Analysts: From Vendor Risk to Incident Coordination.</h3>
                                         <p class="mb-3 text-sm text-gray-500">LinkedIn Learning • Dec 18, 2025</p>
                                         <p class="mb-4 text-gray-600">This comprehensive course covers the fundamental concepts of programming, including variables, data types, control structures, functions, and basic algorithms.</p>
                                         <div class="flex flex-wrap gap-2 mb-4">
@@ -658,16 +524,15 @@
                                             <span class="px-3 py-1 text-sm text-gray-700 bg-gray-100 rounded">Programming Foundations</span>
                                         </div>
                                     </div>
-                                    <div class="flex gap-3">
-                                        <button onclick="openModal('cert-1')" class="px-6 py-2 font-medium text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600">
-                                            View Certificate
-                                        </button>
+                                    <div class="flex justify-center">
                                         <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
-                                           target="_blank" 
-                                           rel="noopener"
-                                           class="flex justify-center items-center w-10 h-10 text-gray-600 bg-gray-100 rounded-full transition-colors hover:bg-gray-200">
-                                            <i class="fab fa-linkedin"></i>
+                                        target="_blank" 
+                                        rel="noopener"
+                                        class="flex justify-center items-center gap-2 text-gray-600 bg-gray-100 rounded-full px-3 py-2 transition-colors hover:bg-green-500">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>View Details</span>
                                         </a>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -680,7 +545,7 @@
                             <div class="flex flex-col md:flex-row">
                                 <!-- Certificate Image -->
                                 <div class="md:w-1/3 cursor-pointer min-h-[200px] md:min-h-0" data-cert-modal="cert-1">
-                                    <img src="image/cert-programming-foundations.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
+                                    <img src="image/Cybersecurity Foundations.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
                                 </div>
                                 <!-- Certificate Details -->
                                 <div class="flex flex-col justify-between p-6 md:w-2/3">
@@ -693,17 +558,16 @@
                                             <span class="px-3 py-1 text-sm text-gray-700 bg-gray-100 rounded">Programming Foundations</span>
                                         </div>
                                     </div>
-                                    <div class="flex gap-3">
-                                        <button onclick="openModal('cert-1')" class="px-6 py-2 font-medium text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600">
-                                            View Certificate
-                                        </button>
-                                        <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
-                                           target="_blank" 
-                                           rel="noopener"
-                                           class="flex justify-center items-center w-10 h-10 text-gray-600 bg-gray-100 rounded-full transition-colors hover:bg-gray-200">
-                                            <i class="fab fa-linkedin"></i>
-                                        </a>
+                                    <div class="flex justify-center">
+                                    <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
+                                        target="_blank" 
+                                        rel="noopener"
+                                        class="flex justify-center items-center gap-2 text-gray-600 bg-gray-100 rounded-full px-4 py-2 transition-colors hover:bg-green-500">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>View Details</span>
+                                    </a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -715,7 +579,7 @@
                             <div class="flex flex-col md:flex-row">
                                 <!-- Certificate Image -->
                                 <div class="md:w-1/3 cursor-pointer min-h-[200px] md:min-h-0" data-cert-modal="cert-1">
-                                    <img src="image/cert-programming-foundations.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
+                                    <img src="image/Learning Threat Modeling for Security.jpg" alt="Programming Foundations Certificate" class="w-full h-full object-cover min-h-[200px]">
                                 </div>
                                 <!-- Certificate Details -->
                                 <div class="flex flex-col justify-between p-6 md:w-2/3">
@@ -728,16 +592,14 @@
                                             <span class="px-3 py-1 text-sm text-gray-700 bg-gray-100 rounded">Programming Foundations</span>
                                         </div>
                                     </div>
-                                    <div class="flex gap-3">
-                                        <button onclick="openModal('cert-1')" class="px-6 py-2 font-medium text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600">
-                                            View Certificate
-                                        </button>
-                                        <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
-                                           target="_blank" 
-                                           rel="noopener"
-                                           class="flex justify-center items-center w-10 h-10 text-gray-600 bg-gray-100 rounded-full transition-colors hover:bg-gray-200">
-                                            <i class="fab fa-linkedin"></i>
-                                        </a>
+                                    <div class="flex justify-center">
+                                    <a href="https://www.linkedin.com/learning/certificates/e1b44eea360fadd63a356e41b2a0329e67c32e939fea2d3375fed252fb466630" 
+                                        target="_blank" 
+                                        rel="noopener"
+                                        class="flex justify-center items-center gap-2 text-gray-600 bg-gray-100 rounded-full px-4 py-2 transition-colors hover:bg-green-500">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>View Details</span>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -814,104 +676,7 @@
     </footer>
 
  
-    <div id="experience-modal" class="hidden fixed inset-0 z-50 justify-center items-center bg-black/50">
-        <div class="w-[380px] bg-black text-white rounded-2xl shadow-2xl overflow-hidden">
-            <div class="flex gap-2 items-center px-5 py-4">
-                <i class="fas fa-briefcase"></i>
-                <span class="text-lg font-semibold">Experience</span>
-            </div>
-            <div class="px-5 pb-5">
-                <div class="relative">
-                    <div class="absolute top-0 bottom-0 left-2 w-px bg-gray-700"></div>
-                    <div class="pl-6 space-y-5">
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">Principal AI Engineer</p>
-                                <p class="text-sm text-gray-400">Standard Chartered</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2025</span>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">AI Ops Engineer</p>
-                                <p class="text-sm text-gray-400">Centre of Excellence for GenAI, Cambridge</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2025</span>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">Senior Full-Stack Developer</p>
-                                <p class="text-sm text-gray-400">Core Technology, Cambridge</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2024</span>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">Software Engineering Lead</p>
-                                <p class="text-sm text-gray-400">PocketDevs</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2022</span>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">Lead Application Developer</p>
-                                <p class="text-sm text-gray-400">Bluewind Asia</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2021</span>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">Software Engineer</p>
-                                <p class="text-sm text-gray-400">GCM</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2020</span>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">BS Information Technology</p>
-                                <p class="text-sm text-gray-400">University of San Carlos</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2019</span>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div class="relative">
-                                <span class="absolute top-2 -left-6 w-3 h-3 bg-white rounded-full ring-2 ring-gray-700"></span>
-                                <p class="font-semibold">Hello World! 👋</p>
-                                <p class="text-sm text-gray-400">Wrote my first line of code</p>
-                            </div>
-                            <span class="text-sm text-gray-400">2015</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-center mt-6">
-                    <button onclick="closeModal('experience')" class="px-6 py-2 font-semibold text-black bg-white rounded-full transition-colors hover:bg-gray-200">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="mailto-confirm-modal" class="hidden fixed inset-0 z-50 justify-center items-center bg-black/50">
-        <div class="w-[360px] bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="flex gap-3 items-center px-6 py-4 text-white bg-gray-900">
-                <i class="text-xl fas fa-envelope-open-text"></i>
-                <span class="text-lg font-semibold">Open Gmail?</span>
-            </div>
-            <div class="p-6 text-center">
-                <p class="mb-6 text-gray-700">Compose an email to joshiasimpas36@gmail.com in Gmail.</p>
-                <div class="flex gap-3 justify-center">
-                    <button type="button" data-confirm-mailto class="px-6 py-2 font-semibold text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600">Open Gmail</button>
-                    <button type="button" data-close-mailto-confirm class="px-6 py-2 font-semibold text-gray-800 bg-gray-200 rounded-lg transition-colors hover:bg-gray-300">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
- 
+
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>

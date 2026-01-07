@@ -97,9 +97,21 @@ document.addEventListener('click', function(event) {
  */
 function openModal(certId) {
     const modal = document.getElementById(`${certId}-modal`);
+    const modalContent = document.getElementById(`${certId}-modal-content`);
+    
     if (modal) {
         modal.classList.remove('hidden');
         modal.classList.add('flex'); // Add flex for centering
+        
+        // Trigger modal animation
+        if (modalContent) {
+            // Small delay to ensure the modal is visible before animation
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+        
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
 }
@@ -110,10 +122,25 @@ function openModal(certId) {
  */
 function closeModal(certId) {
     const modal = document.getElementById(`${certId}-modal`);
+    const modalContent = document.getElementById(`${certId}-modal-content`);
+    
     if (modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex'); // Remove flex
-        document.body.style.overflow = ''; // Restore scrolling
+        // Animate out first
+        if (modalContent) {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            
+            // Wait for animation to complete before hiding
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            }, 300); // Match the transition duration
+        } else {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
     }
 }
 
