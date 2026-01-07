@@ -159,3 +159,82 @@ document.addEventListener('DOMContentLoaded', function() {
 window.openModal = openModal;
 window.closeModal = closeModal;
 
+document.addEventListener('DOMContentLoaded', function() {
+    const emailLink = document.getElementById('email-contact-link');
+    if (emailLink) {
+        emailLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const confirmModal = document.getElementById('mailto-confirm-modal');
+            if (confirmModal) {
+                confirmModal.classList.remove('hidden');
+                confirmModal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    }
+    const confirmBtn = document.querySelector('[data-confirm-mailto]');
+    if (confirmBtn) {
+        confirmBtn.addEventListener('click', function() {
+            const gmailUrl = 'https://mail.google.com/mail/?view=cm&to=joshiasimpas36@gmail.com';
+            const win = window.open(gmailUrl, '_blank', 'noopener');
+            const confirmModal = document.getElementById('mailto-confirm-modal');
+            if (confirmModal) {
+                confirmModal.classList.add('hidden');
+                confirmModal.classList.remove('flex');
+            }
+            if (!win) {
+                const warningModal = document.getElementById('mailto-warning-modal');
+                if (warningModal) {
+                    warningModal.classList.remove('hidden');
+                    warningModal.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                }
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    const closeConfirmBtn = document.querySelector('[data-close-mailto-confirm]');
+    if (closeConfirmBtn) {
+        closeConfirmBtn.addEventListener('click', function() {
+            const confirmModal = document.getElementById('mailto-confirm-modal');
+            if (confirmModal) {
+                confirmModal.classList.add('hidden');
+                confirmModal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    const closeBtn = document.querySelector('[data-close-mailto-modal]');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            const modal = document.getElementById('mailto-warning-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    const modalOverlay = document.getElementById('mailto-warning-modal');
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', function(e) {
+            if (e.target === modalOverlay) {
+                modalOverlay.classList.add('hidden');
+                modalOverlay.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    const confirmOverlay = document.getElementById('mailto-confirm-modal');
+    if (confirmOverlay) {
+        confirmOverlay.addEventListener('click', function(e) {
+            if (e.target === confirmOverlay) {
+                confirmOverlay.classList.add('hidden');
+                confirmOverlay.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});
+
