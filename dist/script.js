@@ -265,3 +265,92 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// ===== Contact Form Handler =====
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnLoading = document.getElementById('btn-loading');
+    const formMessage = document.getElementById('form-message');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Validate required fields
+            if (!name || !email || !subject || !message) {
+                showMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.classList.add('hidden');
+            btnLoading.classList.remove('hidden');
+
+            try {
+                // Create mailto link as fallback (works without backend)
+                const phoneText = phone ? `Phone: ${phone}\n` : '';
+                const mailtoBody = encodeURIComponent(
+                    `Name: ${name}\n` +
+                    `Email: ${email}\n` +
+                    phoneText +
+                    `\nMessage:\n${message}`
+                );
+                const mailtoLink = `mailto:joshiasimpas36@gmail.com?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
+
+                // Try to open email client
+                window.location.href = mailtoLink;
+
+                // Show success message after a short delay
+                setTimeout(() => {
+                    showMessage('Thank you! Your email client should open. If not, please send your message to joshiasimpas36@gmail.com', 'success');
+                    contactForm.reset();
+                    resetButton();
+                }, 500);
+
+            } catch (error) {
+                console.error('Error sending message:', error);
+                showMessage('There was an error. Please email me directly at joshiasimpas36@gmail.com', 'error');
+                resetButton();
+            }
+        });
+    }
+
+    function showMessage(text, type) {
+        formMessage.textContent = text;
+        formMessage.classList.remove('hidden');
+        
+        if (type === 'success') {
+            formMessage.className = 'mb-4 p-4 rounded-lg bg-green-100 text-green-800 border border-green-300';
+        } else {
+            formMessage.className = 'mb-4 p-4 rounded-lg bg-red-100 text-red-800 border border-red-300';
+        }
+
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+            formMessage.classList.add('hidden');
+        }, 5000);
+    }
+
+    function resetButton() {
+        submitBtn.disabled = false;
+        btnText.classList.remove('hidden');
+        btnLoading.classList.add('hidden');
+    }
+});
+

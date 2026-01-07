@@ -16,7 +16,7 @@
                 <!-- Logo -->
                 <a href="#home" class="flex items-center space-x-3 cursor-pointer">
                     <div class="flex justify-center items-center w-10 h-10 bg-green-500 rounded-full">
-                        <span class="text-lg font-bold text-white">J</span>
+                        <span class="text-lg font-bold text-white"></span>
                     </div>
                     <span class="text-xl font-semibold text-gray-900">Josh Simpas</span>
                 </a>
@@ -327,89 +327,121 @@
     </section>
 
     <!-- Portfolio Section -->
-<section id="portfolio" class="py-20 bg-white">
-  <div class="container px-6 mx-auto">
-    <!-- Section Title -->
-    <h2 class="mb-2 text-3xl font-bold text-center text-gray-900 md:text-4xl md:text-left">
-      Projects
-      <div class="mt-2 w-20 h-1 bg-green-500"></div>
-    </h2>
-    <p class="mt-4 mb-12 max-w-2xl text-gray-600">
-      A collection of my projects showcasing technical skills, creativity, and problem-solving abilities.
-    </p>
-
-    <!-- Grid with 3 Projects -->
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-      <!-- Project 1: Classroom Management System -->
-      <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-        <div class="relative group w-full h-64 overflow-hidden rounded-lg shadow-lg">
-          <img src="image/Project.png" alt="Project Screenshot"
-            class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-          <div class="absolute inset-0 bg-white bg-opacity-60 flex flex-col justify-center items-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <h4 class="text-lg font-semibold mb-2">Classroom Management System</h4>
-            <p class="text-sm text-center px-4 mb-3">Built with Python, Django, Tailwind CSS, and MySQL</p>
-            <div class="flex flex-wrap justify-center gap-2">
-              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">Python</span>
-              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">Django</span>
-              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">Tailwind CSS</span>
-              <span class="px-2 py-1 text-xs bg-green-500 rounded-full">MySQL</span>
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="container px-6 mx-auto">
+            <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">Projects</h2>
+                    <p class="mt-2 text-gray-600 max-w-2xl">
+                        A lean snapshot of recent work—quick to scan, easy to open.
+                    </p>
+                </div>
+                <div class="flex gap-3 text-sm text-gray-500">
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 2: Gate Management System -->
-      <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-        <div class="flex justify-center items-center h-48 bg-gradient-to-br from-blue-400 to-blue-600">
-          <i class="text-6xl text-white opacity-50 fas fa-tasks"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="mb-2 text-xl font-semibold text-gray-900">Gate Management System</h3>
-          <p class="mb-4 text-gray-600">
-            A Gate Management System (GMS) is a technology-driven solution designed to control, monitor, 
-            and automate access to gates in residential areas, schools, offices, or industrial facilities.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Node.js</span>
-            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Laravel</span>
-            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Tailwind CSS</span>
-            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">PHP</span>
-            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">Python</span>
-            <span class="px-3 py-1 text-sm text-blue-700 bg-blue-100 rounded-full">MySQL</span>
-          </div>
-          <div class="flex gap-4">
-            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </div>
+            <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Project: Classroom Management System -->
+                <article class="flex flex-col h-full rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="aspect-video w-full overflow-hidden rounded-lg border border-gray-100 bg-gray-50">
+                        <img src="image/Project.png" alt="Classroom Management System mockup" class="h-full w-full object-cover">
+                    </div>
+                    <div class="mt-4 flex flex-col gap-3">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Classroom Management System</h3>
+                            <p class="mt-1 text-sm text-gray-600">Lightweight web suite for class enrollment, grading, and attendance.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs text-gray-700">
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Python</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Django</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Tailwind</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">MySQL</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm">
+                            <a href="#" class="font-semibold text-green-600 hover:text-green-700">View live →</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
 
-      <!-- Project 3: System Monitoring Dashboard -->
-      <div class="overflow-hidden bg-white rounded-lg shadow-sm transition-shadow hover:shadow-lg">
-        <div class="flex justify-center items-center h-48 bg-gradient-to-br from-purple-400 to-purple-600">
-          <i class="text-6xl text-white opacity-50 fas fa-chart-line"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="mb-2 text-xl font-semibold text-gray-900">System Monitoring Dashboard</h3>
-          <p class="mb-4 text-gray-600">
-            IT system monitoring and management application with real-time metrics, alerting system, and comprehensive reporting.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">React</span>
-            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Python</span>
-            <span class="px-3 py-1 text-sm text-purple-700 bg-purple-100 rounded-full">Flask</span>
-          </div>
-          <div class="flex gap-4">
-            <a href="#" class="font-medium text-green-500 hover:text-green-600">View Project →</a>
-            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </div>
+                <!-- Project: Gate Management System -->
+                <article class="flex flex-col h-full rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="aspect-video w-full overflow-hidden rounded-lg border border-gray-100 bg-gray-50">
+                        <img src="image/Gate monitoring system.png" alt="Classroom Management System mockup" class="h-full w-full object-cover">
+                    </div>
+                    <div class="mt-4 flex flex-col gap-3">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Classroom Management System</h3>
+                            <p class="mt-1 text-sm text-gray-600">Lightweight web suite for class enrollment, grading, and attendance.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs text-gray-700">
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Python</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Django</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Tailwind</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">MySQL</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm">
+                            <a href="#" class="font-semibold text-green-600 hover:text-green-700">View live →</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
 
-    </div>
-  </div>
-</section>
+
+                <!-- Project: System Monitoring Dashboard -->
+                <article class="flex flex-col h-full rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="aspect-video w-full overflow-hidden rounded-lg border border-gray-100 bg-gray-50">
+                        <img src="image/Event Task manager.jpg" alt="Classroom Management System mockup" class="h-full w-full object-cover">
+                    </div>
+                    <div class="mt-4 flex flex-col gap-3">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Classroom Management System</h3>
+                            <p class="mt-1 text-sm text-gray-600">Lightweight web suite for class enrollment, grading, and attendance.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs text-gray-700">
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Python</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Django</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">Tailwind</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">MySQL</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm">
+                            <a href="#" class="font-semibold text-green-600 hover:text-green-700">View live →</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col h-full rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="aspect-video w-full overflow-hidden rounded-lg border border-gray-100 bg-gray-50">
+                        <video 
+                        class="h-full w-full object-cover" 
+                        controls 
+                        poster="image/loading screen.png"
+                        preload="metadata">
+                        <source src="video/DEMO PRESENTATION.mp4" type="video/mp4">
+                        </video>                   
+                     </div>
+                    <div class="mt-4 flex flex-col gap-3">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Personal Portfolio</h3>
+                            <p class="mt-1 text-sm text-gray-600">Lightweight web suite for class enrollment, grading, and attendance.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs text-gray-700">
+                            <span class="px-3 py-1 rounded-full border border-gray-200">HTML</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">CSS</span>
+                            <span class="px-3 py-1 rounded-full border border-gray-200">JavaScript</span>                        </div>
+                        <div class="flex items-center gap-4 text-sm">
+                            <a href="#" class="font-semibold text-green-600 hover:text-green-700">View live →</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+            </div>
+        </div>
+    </section>
 
 
     <!-- Blog Section -->
@@ -624,27 +656,33 @@
             </div>
 
             <!-- Form Layout -->    
-            <div class="grid gap-8 md:grid-cols-2">
+            <form id="contact-form" class="grid gap-8 md:grid-cols-2">
                 <!-- Left Column: Input Fields -->
                 <div class="space-y-6">
-                    <input type="text" id="name" name="name" class="px-4 py-3 w-full text-white rounded-lg border-2 border-green-500 bg-blackbg-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Full Name">
+                    <input type="text" id="name" name="name" class="px-4 py-3 w-full text-black rounded-lg border-2 border-green-500 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Full Name" required>
                     
-                    <input type="email" id="email" name="email" class="px-4 py-3 w-full text-white rounded-lg border-2 border-green-500 bg-blackbg-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Email">
+                    <input type="email" id="email" name="email" class="px-4 py-3 w-full text-black rounded-lg border-2 border-green-500 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Your Email Address" required>
                     
-                    <input type="tel" id="phone" name="phone" class="px-4 py-3 w-full text-white rounded-lg border-2 border-green-500 bg-blackbg-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Phone Number">
+                    <input type="tel" id="phone" name="phone" class="px-4 py-3 w-full text-black rounded-lg border-2 border-green-500 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Phone Number">
                     
-                    <input type="text" id="subject" name="subject" class="px-4 py-3 w-full text-white rounded-lg border-2 border-green-500 bg-blackbg-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Subject">
+                    <input type="text" id="subject" name="subject" class="px-4 py-3 w-full text-black rounded-lg border-2 border-green-500 bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Subject" required>
                 </div>
 
                 <!-- Right Column: Text Area and Button -->
                 <div class="flex flex-col">
-                    <textarea id="message" name="message" rows="8" class="px-4 py-3 mb-6 w-full text-white rounded-lg border-2 border-green-500 resize-none bg-blackbg-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Your Message"></textarea>
+                    <textarea id="message" name="message" rows="8" class="px-4 py-3 mb-6 w-full text-black rounded-lg border-2 border-green-500 resize-none bg-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" placeholder="Your Message" required></textarea>
                     
-                    <button type="submit" class="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 self-end shadow-[0_0_20px_rgba(34,197,94,0.6)] hover:shadow-[0_0_25px_rgba(34,197,94,0.8)]">
-                        Send Message
+                    <!-- Success/Error Messages -->
+                    <div id="form-message" class="mb-4 hidden p-4 rounded-lg"></div>
+                    
+                    <button type="submit" id="submit-btn" class="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 self-end shadow-[0_0_20px_rgba(34,197,94,0.6)] hover:shadow-[0_0_25px_rgba(34,197,94,0.8)]">
+                        <span id="btn-text">Send Message</span>
+                        <span id="btn-loading" class="hidden">
+                            <i class="fas fa-spinner fa-spin mr-2"></i>Sending...
+                        </span>
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 
